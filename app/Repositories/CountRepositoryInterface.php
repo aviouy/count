@@ -7,4 +7,7 @@ interface CountRepositoryInterface {
     public function create($data);
 
     public function update();
+
+    public function test();
+
 }

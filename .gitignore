@@ -4,3 +4,9 @@
 Homestead.yaml
 Homestead.json
 .env
+
+#IDE
+/nbproject
+/.idea
+.phpstorm.meta.php
+_ide_helper.php
