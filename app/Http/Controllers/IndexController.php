@@ -11,14 +11,17 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
+    protected $count;
+
     public function __construct(CountService $count)
     {
-        $this->Count = $count;
+        $this->$count = $count;
+
     }
 
     public function index(Request $request){
         $input = $request->except(['_token']);
-        $message = $this->Count->check($input);
+        $message = $this->count->check($input);
         return $message;
     }
 }

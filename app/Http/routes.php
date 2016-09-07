@@ -16,5 +16,4 @@ Route::get('/', function () {
 });
 
 Route::post('index','IndexController@index');
-
 Route::get('demo','DemoController@index');
