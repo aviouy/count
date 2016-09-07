@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::post('index','IndexController@index');
 Route::get('demo','DemoController@index');
